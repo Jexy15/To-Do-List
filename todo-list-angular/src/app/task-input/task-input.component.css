@@ -1,0 +1,87 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #402f5f;  
+    color: #ecf0f1;  /* colore del testo più chiaro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-container {
+    text-align: center;
+    max-width: 400px;
+    background-color: #402f5f;  /* colore di sfondo del contenitore più scuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centra il contenuto orizzontalmente */
+  }
+  
+  h1 {
+    color: #f8f4f8;  /* colore dell'intestazione */
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #41addf;  /* colore del pulsante principale */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #62ca0d;  /* colore del pulsante principale al passaggio del mouse */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #402f5f;  /* colore del bordo più scuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li:hover {
+    background-color: #402f5f;  /* colore dell'elemento della lista al passaggio del mouse */
+  }
+  
+  button.remove-button {
+    background-color: #e74c3c;  /* colore del pulsante di rimozione */
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.remove-button:hover {
+    background-color: #c0392b;  /* colore del pulsante di rimozione al passaggio del mouse */
+  }
+  
+  .task-text {
+    color: #ecf0f1; /* Colore del testo per il testo della task */
+    flex-grow: 1;   /* Fai crescere il testo della task per occupare lo spazio disponibile */
+  }
+  

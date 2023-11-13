@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-task-input',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-input.component.css']
 })
 export class TaskInputComponent {
+
+  newTask = '';
+
+  @Output() addTaskEvent = new EventEmitter<string>();
+
+  addTask() {
+    if (this.newTask.trim() !== '') {
+      this.addTaskEvent.emit(this.newTask);
+      this.newTask = ''; // Pulisce l'input dopo l'aggiunta del compito
+    }
+  }
 
 }
